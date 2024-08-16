@@ -15,7 +15,7 @@ function DeletarCategoria() {
         try {
             await buscar(`/categorias/${id}`, setCategoria, {
                 headers: {
-                    // Adicione headers se necessário
+                    
                 }
             });
         } catch (error: any) {
