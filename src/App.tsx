@@ -5,6 +5,7 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './paginas/home/Home';
+import { ToastContainer } from 'react-toastify';
 import ListaCategorias from './components/categorias/listarCategorias/listaCategoria';
 import FormularioCategoria from './components/categorias/formCategoria/formularioCategoria';
 import DeletarCategoria from './components/categorias/deletarCategoria/deletarCategoria';
@@ -18,6 +19,7 @@ function App() {
     <>
    
         <BrowserRouter>
+        <ToastContainer />
           <Navbar />
           <div className='min-h-[80vh]'>
             <Routes>
